@@ -1,24 +1,19 @@
-import java.util.Scanner;
-
 public class Inciso5 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese un numero entero por teclado");
-        String value = sc.nextLine();
+    public class Inciso4 {
+        public static void main(String[] args) {
+            double val1 = 3;
+            double val2 = 2;
+            double val3 = 1;
 
-        if (value.equals(palindromeChecker(value))){
-            System.out.println("El valor ingresado es capicua");
-        } else
-            System.out.println("El valor ingresado no es capicua");
+            System.out.println(minValue(val1, val2, val3));
 
+        }
+        public static double minValue(double val1, double val2, double val3){
+            double temporal = Math.min(val1, val2);
+            return Math.min(temporal, val3);
+        }
     }
-    public static String palindromeChecker(String num){
-        int longitud = num.length();
-        String reversa = "";
-        for (int i = longitud -1; i>=0; i--){
-            reversa = reversa + num.charAt(i);
-        } return reversa;
 
 
-    }
+
 }
