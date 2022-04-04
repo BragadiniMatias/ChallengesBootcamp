@@ -24,13 +24,13 @@ public class Inciso1 {
         String mensaje = "";
         if (bmi < 20) {
             mensaje =  "Mal estado";
-        } else if (bmi <= 20 || bmi > 22) {
+        } else if (bmi>=20 && bmi<22) {
             mensaje = "Bajo de peso";
-        } else if (bmi <= 22 || bmi > 25) {
+        } else if (bmi>=22 && bmi<25) {
             mensaje = "Peso normal";
-        } else if (bmi <= 25 || bmi >= 30) {
+        } else if (bmi>=25 && bmi<30) {
             mensaje = "Sobre peso";
-        } else if (bmi <= 30 || bmi > 40) {
+        } else if (bmi>=30 && bmi<40) {
             mensaje = "Sobrepeso cronico";
         } else if (bmi > 40) {
             mensaje = "Hospitalizado";
