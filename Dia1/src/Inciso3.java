@@ -11,6 +11,7 @@ public class Inciso3 {
         nota1 = sc.nextDouble();
         nota2 = sc.nextDouble();
         nota3 = sc.nextDouble();
+
         double avg = average(nota1, nota2, nota3);
         System.out.println(avg);
         System.out.println(averageChecker(avg));

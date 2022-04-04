@@ -1,8 +1,8 @@
 public class Inciso4 {
     public static void main(String[] args) {
-        double val1 = 25;
-        double val2 = 20;
-        double val3 = 1000;
+        double val1 = 3;
+        double val2 = 2;
+        double val3 = 1;
 
         System.out.println(highestValue(val1, val2, val3));
 
