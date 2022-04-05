@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ChallengesBootcamp.iml" filepath="$PROJECT_DIR$/.idea/ChallengesBootcamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIA 1/Dia 1 - Pair Programming/Dia 1 - Pair Programming.iml" filepath="$PROJECT_DIR$/DIA 1/Dia 1 - Pair Programming/Dia 1 - Pair Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIA 1/Dia1/Dia1.iml" filepath="$PROJECT_DIR$/DIA 1/Dia1/Dia1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIA 1/Dia1 - Numero primo/Dia1 - Numero primo.iml" filepath="$PROJECT_DIR$/DIA 1/Dia1 - Numero primo/Dia1 - Numero primo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIA 1/Dia1- Ej Triangulo/Dia1- Ej Triangulo.iml" filepath="$PROJECT_DIR$/DIA 1/Dia1- Ej Triangulo/Dia1- Ej Triangulo.iml" />
+    </modules>
+  </component>
+</project>
