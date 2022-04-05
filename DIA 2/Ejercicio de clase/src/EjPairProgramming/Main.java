@@ -74,7 +74,10 @@ public class Main {
                 case 6:
                     flag = false;
                     break;
-
+                    
+                default:
+                    System.out.println("\n Invalid Option \n");
+                    break;
 
             }
 
