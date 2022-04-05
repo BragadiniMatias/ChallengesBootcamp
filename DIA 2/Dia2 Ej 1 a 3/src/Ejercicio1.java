@@ -24,6 +24,8 @@ public class Ejercicio1 {
                 break;
             case '/':
                 System.out.println("La division de " + value1 + " y " + value2 + " es " + divide(value1, value2));
+            default:
+                System.out.println("No es operacion valida");
         }
 
 
