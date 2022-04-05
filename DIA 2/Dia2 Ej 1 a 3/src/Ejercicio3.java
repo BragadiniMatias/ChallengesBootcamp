@@ -61,7 +61,6 @@ public class Ejercicio3 {
             double temporalVariable = arreglo[i];
             //Asigno la primera mitad a la ultima mitad
             arreglo[i] = arreglo[longitud - i -1];
-
             //Asigno la ultima mitad a la primera mitad
             arreglo[longitud-i-1] = temporalVariable;
 
