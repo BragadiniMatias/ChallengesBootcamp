@@ -9,20 +9,20 @@ public class Ejercicio1 {
         double value1 = sc.nextDouble();
         double value2 = sc.nextDouble();
 
-        System.out.println("Ingrese una operacion: 1:+  , 2:-  , 3:* , 4:/");
-        int operation = sc.nextInt();
+        System.out.println("Ingrese una operacion: +  ,-  ,* , /");
+        char operation = sc.next().charAt(0);
 
         switch(operation){
-            case 1:
+            case '+':
                 System.out.println("La suma de " + value1 + " y " + value2 + " es " + sum(value1, value2));
                 break;
-            case 2:
+            case '-':
                 System.out.println("La resta de " + value1 + " y " + value2 + " es " + substract(value1, value2));
                 break;
-            case 3:
+            case '*':
                 System.out.println("La multiplicacion de " + value1 + " y " + value2 + " es " + multiply(value1, value2));
                 break;
-            case 4:
+            case '/':
                 System.out.println("La division de " + value1 + " y " + value2 + " es " + divide(value1, value2));
         }
 
