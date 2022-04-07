@@ -20,7 +20,7 @@ public class Main {
         cg.acelerar(150);
         System.out.println(cg);
 
-
+        
 
 
 
