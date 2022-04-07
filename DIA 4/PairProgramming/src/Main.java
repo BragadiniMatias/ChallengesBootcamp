@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Scanner d1 = new Scanner(System.in);
         boolean exit = false;
         ArrayList<ClienteEstandar> clientesStd = new ArrayList<>();
         ArrayList<ClientePremium> clientePremiums = new ArrayList<>();
@@ -12,6 +12,7 @@ public class Main {
         ClienteEstandar cliente = new ClienteEstandar("Matias", "Bragadini", "40454980", 10000, false);
         ClientePremium cliente2 = new ClientePremium("Claudio", "Hernandez", "1", 20000, 15);
 
+        clientePremiums.add(cliente2);
 
 
         cliente.pagar(5000);
@@ -21,8 +22,23 @@ public class Main {
         cliente2.pagar(10000);
         System.out.println(cliente2.getMontoDeuda());
 
+        System.out.println("Ingresa DNI a consultar");
+        String compara = sc.nextLine();
+
+        for (ClientePremium c : clientePremiums) {
+                            if (c.getDni().equals(compara)) {
+                                System.out.println(c.getMontoDeuda());
+                            } else {
+                                System.out.println("DNI no encontrado");
+                            }
+                         }
+                   }
+
+
     }
-}
+
+
+
 
 
 //        while (!exit){
