@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "62587ef6819b004d76e1ad22"
+  },
+  "idU": 1,
+  "Nombre": "MatiasBragadini",
+  "Playlists:": 10
+},{
+  "_id": {
+    "$oid": "62587f11478d3d4108fbcd21"
+  },
+  "idU": 2,
+  "Nombre": "Misael",
+  "Playlists:": 5
+}]

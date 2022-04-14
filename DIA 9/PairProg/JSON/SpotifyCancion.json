@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "62587c0cfa7c4823790ea4f5"
+  },
+  "id": 1,
+  "Nombre": "Shape of you",
+  "Id artista": 1,
+  "Duracion": "3:30"
+},{
+  "_id": {
+    "$oid": "62587c355161691d31bb9eef"
+  },
+  "id": 2,
+  "Nombre": "Ademas de mi remix",
+  "Id artista": 2,
+  "Duracion": "4:30"
+}]

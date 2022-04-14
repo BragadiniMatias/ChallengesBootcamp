@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "62587b9e2c8dd65ae3a736f8"
+  },
+  "id": 1,
+  "Nombre": "Ed Sheeran",
+  "Reproducciones mensules": "100 millones"
+},{
+  "_id": {
+    "$oid": "62587bcbdeaf580f8d998304"
+  },
+  "id": 2,
+  "Nombre": "Duki",
+  "Reproducciones mensules": "50"
+}]
