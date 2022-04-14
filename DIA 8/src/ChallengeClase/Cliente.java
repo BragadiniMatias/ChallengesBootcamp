@@ -1,3 +1,5 @@
+package ChallengeClase;
+
 public class Cliente {
     private static int idCliente;
     private int id;

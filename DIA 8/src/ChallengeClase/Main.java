@@ -1,5 +1,10 @@
-import com.mysql.cj.x.protobuf.MysqlxCrud;
+package ChallengeClase;
 
+import ChallengeClase.Cliente;
+import ChallengeClase.DeleteClient;
+import ChallengeClase.InsertClient;
+
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Main {
@@ -10,21 +15,19 @@ public class Main {
         SelectClient sel = new SelectClient();
 
 
-
-        Conection conection = new Conection();
         Cliente mati = new Cliente("Matias", "Bragadini", "40454980", "Tejedor 410", "17 de mayo de 1997");
         Cliente carlos = new Cliente("Carlos", "Ramon", "124151", "Colon 1540", "1 de noviembre de 2000");
 
-        //ins.insert(mati);
-        //del.delete(mati);
-
-
-
-
-
-
-
-
 
     }
-}
+    }
+
+
+
+
+
+
+
+
+
+
