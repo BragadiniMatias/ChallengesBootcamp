@@ -1,15 +1,17 @@
 package Models;
 
+import java.sql.Date;
+
 public class Factura {
     private static int idFac;
     private int id;
-    private String fecha;
+    private Date fecha;
     private String detalle;
     private Vendedor vendedor;
     private Cliente cliente;
 
 
-    public Factura(int id, String fecha, String detalle, Vendedor vendedor, Cliente cliente) {
+    public Factura(int id, Date fecha, String detalle, Vendedor vendedor, Cliente cliente) {
         this.fecha = fecha;
         this.detalle = detalle;
         this.vendedor = vendedor;
@@ -35,11 +37,11 @@ public class Factura {
         this.id = id;
     }
 
-    public String getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 

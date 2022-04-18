@@ -1,5 +1,7 @@
 package Models;
 
+import java.sql.Date;
+
 public class Vendedor {
     private static int idV;
     private int id;
@@ -8,10 +10,10 @@ public class Vendedor {
     private String Dni;
     private String direccion;
     private String salario;
-    private String date;
+    private Date date;
 
 
-    public Vendedor(int id, String nombre, String apellido, String dni, String direccion, String salario, String date) {
+    public Vendedor(int id, String nombre, String apellido, String dni, String direccion, String salario, Date date) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -70,11 +72,11 @@ public class Vendedor {
         this.salario = salario;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

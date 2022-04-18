@@ -1,5 +1,7 @@
 package Models;
 
+import java.sql.Date;
+
 public class Cliente {
     private static int idCliente;
     private int id;
@@ -7,12 +9,13 @@ public class Cliente {
     private String apellidos;
     private String DNI;
     private String direccion;
-    private String fechaNacimiento;
+    private java.sql.Date fechaNacimiento;
 
     public Cliente() {
     }
 
-    public Cliente(String nombre, String apellidos, String DNI, String direccion, String fechaNacimiento) {
+    public Cliente(String nombre, String apellidos, String DNI, String direccion, Date
+            fechaNacimiento) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.DNI = DNI;
@@ -70,11 +73,11 @@ public class Cliente {
         this.direccion = direccion;
     }
 
-    public String getFechaNacimiento() {
+    public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(String fechaNacimiento) {
+    public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 }
