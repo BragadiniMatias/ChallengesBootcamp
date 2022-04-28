@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Template Example</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    </head>
+    <body>
+            <a th:href="@{users/create}">Register an user</a>
+            <a th:href="@{../students/create}">Register a student</a>
+            <a th:href="@{../materias/create}">Register a subject</a>
+            <table class ="table table-hover">
+
+                    <thead>
+                    <tr>
+                        <th> Id </th>
+                        <th> Name </th>
+                        <th> Username </th>
+                        <th> Email </th>
+                        <th> Password </th>
+                        <th> Actions </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="user: ${users}">
+                        <td th:text = ${user.id}></td>
+                        <td th:text = ${user.name}></td>
+                        <td th:text = ${user.username}></td>
+                        <td th:text = ${user.email}></td>
+                        <td th:text = ${user.password}></td>
+                        <td>
+                            <button class="btn btn-dark" > <a th:href="@{users/update/{id} (id = ${user.id})}"> Edit </a> </button>
+                            <button class="btn btn-dark" > <a  th:href ="@{users/delete/{id} (id = ${user.id})} "> Delete </a> </button>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+    </body>
+</html>

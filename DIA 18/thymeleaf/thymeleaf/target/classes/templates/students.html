@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Template Example</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+</head>
+<body>
+<a th:href="@{users/create}">Register an user</a>
+<a th:href="@{students/create}">Register a student</a>
+<a th:href="@{/create}">Register a subject</a>
+<table class ="table table-hover">
+
+    <thead>
+    <tr>
+        <th> DNI </th>
+        <th> Nombre </th>
+        <th> Apellido </th>
+        <th> Telefono </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student: ${students}">
+        <td th:text = ${students.dni}></td>
+        <td th:text = ${students.nombre}></td>
+        <td th:text = ${students.apellido}></td>
+        <td th:text = ${students.telefono}></td>
+        <td>
+            <button class="btn btn-dark" > <a th:href="@{students/update/{id} (id = ${student.id})}"> Edit </a> </button>
+            <button class="btn btn-dark" > <a  th:href ="@{students/delete/{id} (id = ${student.id})} "> Delete </a> </button>
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
