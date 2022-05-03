@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org/%22%3E">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ingreso de nuevo celular.</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class ="container">
+    <form th:action="@{/facturas/comprar}" th:object="${factura}" method="post">
+
+        <label>Nombre: </label>
+        <input type="text" name="nombre" th:field="*{nombre}"/>
+        <br>
+        <label>Apellido: </label>
+        <input type="text" name="apellido" th:field="*{apellido}"/>
+        <br>
+        <label>Dni: </label>
+        <input type="text" name="dni" th:field="*{dni}"/>
+        <input type="text" name="idCelular" th:field="*{idCelular}" hidden />
+
+        <br>
+        <button type="submit" >
+           Crear Factura
+        </button>
+        <br>
+    </form>
+    <a th:href="@{/celulares}">Go back</a>
+</div>
+</body>
+</html>

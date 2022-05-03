@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/%22%3E">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Ticket</title>
+	</head>
+    <body>
+	        <h4>TICKET:</h4>
+	        <p>Nombre:<span th:text="${factura.nombre}"></span></p>
+	        <p>Apellido:<span th:text="${factura.apellido}"></span></p>
+	        <p>DNI:<span th:text="${factura.dni}"></span></p>
+	        <p>ID Producto:<span th:text="${celular.id}"></span></p>
+	        <p>Marca Producto:<span th:text="${celular.marca}"></span></p>
+	        <p>Modelo:<span th:text="${celular.modelo}"></span></p>
+	        <p>Monto:<span th:text="${celular.precio}"></span></p>
+    </body>
+</html>
