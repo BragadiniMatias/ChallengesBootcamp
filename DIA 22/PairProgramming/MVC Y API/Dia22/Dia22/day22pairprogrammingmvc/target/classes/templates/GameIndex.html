@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark">
+    <br> <br>
+    <div class="container">
+        <button class="btn btn-dark"> <a th:href="@{/games/create}">Create a game</a></button>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th> Id </th>
+                    <th> Name </th>
+                    <th> Genre </th>
+                    <th> Classification </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="game: ${games}">
+                    <td th:text=${game.id}></td>
+                    <td th:text=${game.name}></td>
+                    <td th:text=${game.genre}></td>
+                    <td th:text=${game.classification}></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
